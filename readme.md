@@ -1,12 +1,14 @@
+## Project Summary
+
+The project is focused on building a classification model to predict whether a customer will churn their credit card services. The project uses Python and several libraries, including Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, and XGBoost.
+
 ### Business Context
 
-The Thera bank recently saw a steep decline in the number of users of their credit card, credit cards are a good source of income for banks because of different kinds of fees charged by the banks like annual fees, balance transfer fees, and cash advance fees, late payment fees, foreign transaction fees, and others. Some fees are charged to every user irrespective of usage, while others are charged under specified circumstances.
-
-Customers’ leaving credit cards services would lead bank to loss, so the bank wants to analyze the data of customers and identify the customers who will leave their credit card services and reason for same – so that bank could improve upon those areas
-
-You as a Data scientist at Thera bank need to come up with a classification model that will help the bank improve its services so that customers do not renounce their credit cards
+The Thera bank recently saw a steep decline in the number of users of their credit card, which is a good source of income for banks. Customers leaving credit card services would lead the bank to loss, so the bank wants to analyze the data of customers and identify the customers who will leave their credit card services and the reason for the same – so that the bank could improve upon those areas.
 
 ### Data Description
+
+The dataset used in this project contains the following columns:
 
 * CLIENTNUM: Client number. Unique identifier for the customer holding the account
 * Attrition_Flag: Internal event (customer activity) variable - if the account is closed then "Attrited Customer" else "Existing Customer"
@@ -30,20 +32,17 @@ You as a Data scientist at Thera bank need to come up with a classification mode
 * Total_Ct_Chng_Q4_Q1: Change in Transaction Count (Q4 over Q1)
 * Avg_Utilization_Ratio: Average Card Utilization Ratio
 
-#### What Is a Revolving Balance?
+### Libraries Used
 
-- If we don't pay the balance of the revolving credit account in full every month, the unpaid portion carries over to the next month. That's called a revolving balance
+The following libraries were used in this project:
 
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* XGBoost
 
-##### What is the Average Open to buy?
+### Conclusion
 
-- 'Open to Buy' means the amount left on your credit card to use. Now, this column represents the average of this value for the last 12 months.
-
-##### What is the Average utilization Ratio?
-
-- The Avg_Utilization_Ratio represents how much of the available credit the customer spent. This is useful for calculating credit scores.
-
-
-##### Relation b/w Avg_Open_To_Buy, Credit_Limit and Avg_Utilization_Ratio:
-
-- ( Avg_Open_To_Buy / Credit_Limit ) + Avg_Utilization_Ratio = 1
+The project provides a comprehensive example of how to approach a classification problem using Python and various machine learning libraries. The notebook explores the data, performs data cleaning and preprocessing, performs exploratory data analysis (EDA), builds and evaluates several machine learning models, selects the best-performing model, and performs hyperparameter tuning to optimize its performance. The optimized model is then used to make predictions on a test set, and the results are evaluated using various metrics.
